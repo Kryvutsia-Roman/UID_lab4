@@ -1,17 +1,59 @@
 # lab4
 
-A new Flutter project.
+## Опис проєкту
+Цей проєкт був розроблений у рамках лабораторної роботи №4 з курсу **«Розробка інтерфейсів користувача»**.
 
-## Getting Started
+Застосунок реалізує просту **форму опитування**, яка послідовно відображає користувачу запитання, дозволяє вводити відповіді та зберігає їх у текстовий файл на пристрої.
 
-This project is a starting point for a Flutter application.
+Проєкт створений з використанням фреймворку Flutter та мови програмування Dart.
 
-A few resources to get you started if this is your first Flutter project:
+---
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+## Мета роботи
+Ознайомитися з принципами створення мобільних застосунків за допомогою Flutter, навчитися створювати графічний інтерфейс користувача, обробляти події користувача та зберігати дані у файловій системі.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+---
+
+## Використані технології
+- **Flutter**
+- **Dart**
+- **Material Design**
+- **File System API**
+
+---
+
+## Функціонал застосунку
+- Відображення послідовності запитань
+- Введення відповіді у текстове поле
+- Перевірка введення (порожня відповідь)
+- Перехід до наступного питання
+- Повідомлення про завершення опитування
+- Збереження відповідей у текстовий файл
+
+---
+
+## Основні елементи інтерфейсу
+- **MaterialApp** — головний віджет застосунку  
+- **Scaffold** — структура екрана  
+- **AppBar** — верхня панель застосунку  
+- **Text** — відображення питань  
+- **TextField** — поле введення відповіді  
+- **ElevatedButton** — кнопка переходу до наступного питання  
+- **SnackBar** — повідомлення про помилки  
+- **AlertDialog** — повідомлення про завершення опитування  
+
+---
+
+## Збереження результатів
+Відповіді користувача зберігаються у текстовий файл:
+Файл записується у папку **Download** на пристрої Android.
+
+## Як розробнику запустити проєкт
+1. Встановити Flutter SDK  
+2. Клонувати репозиторій:
+3. Виконати команди
+```bash
+git clone https://github.com/USERNAME/flutter-survey-app.git
+cd flutter-survey-app
+flutter pub get
+flutter run
